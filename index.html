@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cal-body">
+        <div class="banner font">
+            Calculator
+        </div>
+        <div class="close-circle"></div>
+        <div id="exp-tab">
+            <p id="exp-text" class="font"></p>
+        </div>
+        <div id="res-tab">
+            <p id="res-text" class="font">1234243</p>
+        </div>
+        <div class="key-pad">
+            <div class="key-pad-row">
+                <button class="ac" onclick="clearText()">AC</button>
+                <button onclick="backSpace()">⌫</button>
+                <button class="opt" onclick="operation('^')">^</button>
+                <button class="opt" onclick="operation('/')">/</button>
+                <button onclick="numBtn(7)">7</button>
+                <button onclick="numBtn(8)">8</button>
+                <button onclick="numBtn(9)">9</button>
+                <button class="opt" onclick="operation('x')">x</button>
+                <button onclick="numBtn(4)">4</button>
+                <button onclick="numBtn(5)">5</button>
+                <button onclick="numBtn(6)">6</button>
+                <button class="opt" onclick="operation('-')">-</button>
+                <button onclick="numBtn(1)">1</button>
+                <button onclick="numBtn(2)">2</button>
+                <button onclick="numBtn(3)">3</button>
+                <button class="opt" onclick="operation('+')">+</button>
+                <button onclick="numBtn('.')">.</button>
+                <button onclick="numBtn(0)">0</button>
+                <button onclick="numBtn('00')">00</button>
+                
+                
+                <button class="eq" onclick="operation('=')">=</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>    
+</body>
+</html>

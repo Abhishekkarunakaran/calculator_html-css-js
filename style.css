@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    background: url(bg.jpg);
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+}
+
+.font {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#cal-body {
+    background-color: rgb(27, 27, 27);
+    width: 350px;
+    height: 600px;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -175px;
+    align-items: center;
+    padding: 10px;
+}
+
+div .banner {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    color: beige;
+    font-weight: 600;
+}
+
+.close-circle {
+    right: 15px;
+    top: 18px;
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.close-circle:hover {
+    background-color:rgb(194, 69, 69);
+}
+
+
+#exp-tab {
+    top: 55px;
+    position: relative;
+    border: 1px solid beige;
+    color: beige;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#exp-text {
+    position: absolute;
+    text-align: end;
+    line-height: 50px;
+    right: 15px;
+    font-weight: 600;
+}
+
+#res-tab {
+    top: 70px;
+    position: relative;
+    border: 1px solid beige;
+    color: beige;
+    height: 60px;
+    width: 100%;
+}
+
+#res-text {
+    position: relative;
+    text-align: end;
+    line-height: 60px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.key-pad {
+    position: relative;
+    top: 15%;
+    height: 395px;
+    width: 100%;
+    display: table;
+}
+
+.key-pad-row button {
+    display: table-cell;
+    width: 24.14%;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid beige;
+    height: 70px;
+    margin-bottom: 5px;
+    color: beige;
+    font-size: 25px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.key-pad-row button:active {
+    background-color:rgb(65, 65, 65);
+}
+
+.key-pad-row button.eq {
+    background-color:rgb(82, 145, 63) ;
+}
+
+.key-pad-row button.eq:active {
+    background-color:rgb(118, 192, 97) ;
+}
+
+
+.key-pad-row button.ac {
+    background-color: rgb(194, 69, 69);
+}
+
+.key-pad-row button.ac:active {
+    background-color: rgb(212, 84, 84);
+}
+
+.key-pad-row button.opt {
+    background-color: rgb(41, 41, 41);
+}
+
+.key-pad-row button.opt:active {
+    background-color: rgb(85, 85, 85);
+}
